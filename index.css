@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: whitesmoke;
+  color: rgb(128, 0, 107);
+  font-family: "Trebuchet MS", sans-serif;
+}
+header {
+  background-color: #5c0564;
+  padding: 10px 0;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  height: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  margin-bottom: 100px;
+}
+.TopHeading {
+  margin-top: 100px;
+}
+.menuLinks {
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+.menu a:hover {
+  opacity: 0.5;
+  color: crimson;
+}
+main {
+  width: 100%;
+  padding: 30px;
+}
+section {
+  margin-block-end: 40px;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+  font-style: italic;
+}
+h4 {
+  font-size: 23px;
+}
+h1,
+h4 {
+  text-align: center;
+  margin-block-end: 7px;
+}
+h2 {
+  font-size: 30px;
+}
+p,
+.reason,
+.goal {
+  font-size: 20px;
+  line-height: 32px;
+}
+.reason .goal {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+footer {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  margin-bottom: 100px;
+}
+footer:hover {
+  opacity: 0.5;
+}
+footer:active {
+  opacity: 0.5;
+}
+footer a {
+  color: rgb(128, 0, 107);
+  text-decoration: none;
+}
+/* === small phone style===== */
+@media only screen and (max-width: 760px) {
+  main {
+    padding: 25px;
+  }
+  section {
+    padding: 25px 25px 0 0;
+  }
+  section h1 {
+    font-size: 30px;
+  }
+  section h2 {
+    font-size: 5vw;
+    margin-bottom: 20px;
+  }
+  section p,
+  section li {
+    font-size: 4.5vw;
+    line-height: 40px;
+  }
+}

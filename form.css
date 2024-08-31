@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f8f1e7;
+  z-index: 2;
+}
+.imageContainer img {
+  width: 400px;
+}
+.formContainerMain {
+  margin-left: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  display: none;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  width: 380px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.loginFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a,
+span {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+  margin-top: 15px;
+}
+.tel,
+span {
+  font-size: 12px;
+}
+.tel,
+span {
+  display: block;
+}
+.signin {
+  font-size: 16px;
+}
+section {
+  padding: 30px;
+  width: 600px;
+}
+.signin {
+  text-align: right;
+  margin-bottom: 16px;
+}
+.signin a,
+p a {
+  color: rgb(17, 0, 255);
+  text-decoration: none;
+}
+.signup {
+  text-align: start;
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.step {
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+fieldset {
+  border: none;
+  margin-bottom: 10px;
+  width: 100%;
+}
+legend {
+  font-size: medium;
+  padding-bottom: 5px;
+  line-height: 1.2;
+}
+.NormalInput,
+.passwordContainer input {
+  font-size: 14px;
+  line-height: 22px;
+  width: 100%;
+  font-family: "Arial" "Segoe UI";
+  vertical-align: top;
+  padding: 16px 24px 16px 10px;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgb(250, 250, 250);
+  border-radius: 5px;
+}
+.passwordContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgb(250, 250, 250);
+  border-radius: 5px;
+  padding-right: 10px;
+}
+.eyeContainer .eye {
+  color: grey;
+  font-size: 12px;
+}
+select {
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgb(250, 250, 250);
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+}
+.step,
+input,
+p {
+  color: grey;
+}
+.first-container,
+.second-container,
+.third-container,
+.forth-container,
+.password-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.passwordContainer {
+  width: 100%;
+}
+.channel-container {
+  width: 100%;
+}
+.channel,
+select {
+  width: 100%;
+}
+.NormalInput:hover,
+select:hover,
+.passwordContainer:hover {
+  border-color: rgb(17, 0, 255);
+}
+
+.NormalInput:focus,
+select:focus,
+.passwordContainer:focus {
+  border-color: rgb(17, 0, 255);
+  outline: none;
+}
+.passwordContainer input:focus {
+  border: none;
+  outline: none;
+}
+p {
+  font-size: 16px;
+  width: 500px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+button {
+  color: white;
+  background-color: rgb(0, 47, 255);
+  border: none;
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 5px;
+}
+.TandC {
+  margin-top: 20px;
+}
+/* === small phone style===== */
+@media only screen and (max-width: 760px) {
+  .formContainerMain {
+    width: 100%;
+    margin-left: 0;
+  }
+  .imageContainer {
+    display: none;
+  }
+  .first-container,
+  .second-container,
+  .third-container,
+  .forth-container,
+  .password-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .logoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    display: block;
+  }
+}
