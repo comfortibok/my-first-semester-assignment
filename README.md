@@ -6,3 +6,4 @@ I'm currently a student at AltSchool Africa, School of Engineering. After four m
 - table.html
 - media.html
 
+Hosted URL - https://comfortibok-assignment1.netlify.app
